@@ -9,7 +9,7 @@
 
 ---
 
-## 🧠 ¿De qué trata este trabajo?
+## ¿De qué trata este trabajo?
 
 Este artículo explora una pregunta central en la teoría de tipos y la verificación formal:
 
@@ -30,7 +30,7 @@ puede leerse de dos formas:
 
 ---
 
-## 🗂️ Estructura del trabajo
+## Estructura del trabajo
 
 ```
 ├── I.   Introducción
@@ -52,7 +52,7 @@ puede leerse de dos formas:
 
 ---
 
-## 🔑 Conceptos clave
+## Conceptos clave
 
 - **Correspondencia de Curry–Howard** — proposiciones ⇄ tipos, pruebas ⇄ términos.
 - **Universos `Prop` y `Type`** — separan contenido lógico y contenido computacional dentro del mismo lenguaje.
@@ -62,7 +62,7 @@ puede leerse de dos formas:
 
 ---
 
-## 🧪 Caso de estudio: `aeval` vs. `aevalR`
+## Caso de estudio: `aeval` vs. `aevalR`
 
 El corazón experimental del trabajo compara dos formas de dar semántica a expresiones aritméticas:
 
@@ -89,18 +89,8 @@ Theorem aeval_iff_aevalR :
   forall a n, aevalR a n <-> aeval a = n.
 ```
 
-✅ El programa que **calcula** y la relación que **describe** su comportamiento quedan unificados por una prueba verificada por el propio núcleo de Rocq.
+El programa que **calcula** y la relación que **describe** su comportamiento quedan unificados por una prueba verificada por el propio núcleo de Rocq.
 
----
-
-## ⚖️ Rocq vs. programación funcional convencional
-
-| | OCaml / Haskell / ML | Rocq |
-|---|---|---|
-| Funciones, tipos algebraicos, pattern matching | ✅ | ✅ |
-| Corrección verificada dentro del lenguaje | ❌ (pruebas externas, tests) | ✅ (proof objects) |
-| Definiciones inductivas generan principios de inducción | ❌ | ✅ |
-| Recursión general permitida | ✅ | ⚠️ Restringida (debe terminar) |
 
 ---
 
@@ -110,7 +100,7 @@ Theorem aeval_iff_aevalR :
 
 ---
 
-## 👥 Autoría
+## Autoría
 
 | Autor/a | Correo |
 |---|---|
@@ -118,11 +108,11 @@ Theorem aeval_iff_aevalR :
 | Mariana López Pérez | marlop@ciencias.unam.mx |
 | Michelle Alanis Navarro Fierro | michellenavf0@ciencias.unam.mx |
 
-📍 Facultad de Ciencias, UNAM — Ciudad de México, México
+ Facultad de Ciencias, UNAM — Ciudad de México, México
 
 ---
 
-## 📚 Referencias principales
+## Referencias principales
 
 - Howard, W. A. — *The Formulae-as-Types Notion of Construction* (1980)
 - Coquand, T. & Huet, G. — *The Calculus of Constructions* (1988)
